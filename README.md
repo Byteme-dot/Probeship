@@ -69,6 +69,14 @@ SCRAPER_API_KEY=your_api_key_here
 ```
 
 Deep Search mode requires a ScraperAPI key.
+Enrichment feature also requires ScraperAPI key.
+
+## Get your own ScraperAPI Key
+
+Go to:
+https://dashboard.scraperapi.com/login
+
+Create or login to your account, copy your API key from the dashboard, and paste it into the `.env` file.
 
 ---
 
