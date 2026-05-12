@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Probeship</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav class="navbar">
+
+      <h1>PROBE<span class="purple-text">SHIP •</span></h1>
+
+      <button id="themeToggle">
+        🌙
+      </button>
+
+    </nav>
+
+
+    <section class="search-section">
+
+      <div class="search-box">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search internships..."
+        />
+
+
+        <div class="search-buttons">
+
+            <button
+              type="button"
+              onclick="searchInternships('normal')"
+            >
+              ⚡ Quick Search
+            </button>
+
+            <button
+              type="button"
+              onclick="searchInternships('pro')"
+            >
+              🔍 Deep Search
+            </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="filters">
+
+        <select id="locationFilter">
+
+          <option value="">
+            All Locations
+          </option>
+
+          <option value="work from home">
+            Work From Home
+          </option>
+
+          <option value="delhi">
+            Delhi
+          </option>
+
+          <option value="mumbai">
+            Mumbai
+          </option>
+
+          <option value="gurgaon">
+            Gurugram
+          </option>
+
+          <option value="bangalore">
+            Bengaluru
+          </option>
+
+        </select>
+
+
+        <select id="paidFilter">
+
+          <option value="">
+            All
+          </option>
+
+          <option value="paid">
+            Paid
+          </option>
+
+          <option value="unpaid">
+            Unpaid
+          </option>
+
+        </select>
+
+      </div>
+
+    </section>
+
+
+    <div id="loader" class="loader hidden">
+      Scraping internships...
+    </div>
+
+
+    <section
+      id="internshipGrid"
+      class="internship-grid"
+    >
+
+    </section>
+      <div class="load-more-container">
+
+      <button id="loadMoreBtn">
+
+        Load More
+
+      </button>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
